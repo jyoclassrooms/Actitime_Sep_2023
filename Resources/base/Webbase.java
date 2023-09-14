@@ -14,6 +14,11 @@ public class Webbase
 {
 	private WebDriver driver=null;
 	
+	public WebDriver get_driver()
+	{
+		return driver;
+	}
+	
 	@BeforeMethod()
 	@Parameters({"browser","url","username","password"})
 	public void login(String browser,String url,String username,String password)

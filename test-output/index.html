@@ -144,10 +144,10 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;parameter name=&quot;password&quot; value=&quot;123123&quot;/&gt;
+  &lt;parameter name=&quot;password&quot; value=&quot;manager&quot;/&gt;
   &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
   &lt;parameter name=&quot;url&quot; value=&quot;http://127.0.0.1/login.do&quot;/&gt;
-  &lt;parameter name=&quot;username&quot; value=&quot;test&quot;/&gt;
+  &lt;parameter name=&quot;username&quot; value=&quot;admin&quot;/&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;admin.Customer&quot;/&gt;
@@ -194,12 +194,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'createcustomer')
 data.setCell(0, 2, 'admin.Customer')
-data.setCell(0, 3, 3010);
+data.setCell(0, 3, 1424);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -227,16 +227,16 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">admin.Customer</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">login(chrome, http://127.0.0.1/login.do, test, 123123)</span>
+                <span class="method-name">login(chrome, http://127.0.0.1/login.do, admin, manager)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createcustomer</span>
-                <span class="method-start">3365 ms</span>
+                <span class="method-start">2860 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logout</span>
-                <span class="method-start">6378 ms</span>
+                <span class="method-start">4286 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
