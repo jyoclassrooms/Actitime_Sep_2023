@@ -47,6 +47,7 @@ public class Webbase
 	{
 		Common com=new Common(driver);
 		com.logout().click();
+		driver.close();
 	}
 	
 	

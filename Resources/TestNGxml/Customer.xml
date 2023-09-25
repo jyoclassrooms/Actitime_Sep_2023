@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <parameter name="browser" value="chrome"/>
-  <parameter name="url" value="http://127.0.0.1/login.do"/>
-  <parameter name="username" value="admin"/>
-  <parameter name="password" value="manager"/>
-  <test thread-count="5" name="Test">
-    <classes>
-      <class name="admin.Customer"/>
-    </classes>
-  </test> <!-- Test -->
+	<parameter name="browser" value="chrome" />
+	<parameter name="url" value="http://127.0.0.1/login.do" />
+	<parameter name="username" value="admin" />
+	<parameter name="password" value="manager" />
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="admin.Customer" />
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->

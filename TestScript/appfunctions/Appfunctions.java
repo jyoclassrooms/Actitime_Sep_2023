@@ -18,7 +18,7 @@ public class Appfunctions
     	this.driver=driver;
     }
     //flow of the application
-	public void createcustomer() throws IOException
+	public void createcustomer(String custname,String cust_desc) throws IOException, InterruptedException
 	{
 		Tasks  tsk=new Tasks(driver);
 		tsk.tasks().click();
@@ -26,10 +26,11 @@ public class Appfunctions
 		tsk.project_customer().click();
 		new Waitingstatments().implicit_wait(5, driver,tsk.create_new_customer());
 		tsk.create_new_customer().click();
-		tsk.name().sendKeys("abc");
-		tsk.description().sendKeys("xyz");
+		tsk.name().sendKeys(custname);
+		tsk.description().sendKeys(cust_desc);
 		tsk.create_customer().click();
-		new Screenshots().get_window_screenshot(driver);
+		Thread.sleep(2000);
+		new Screenshots().get_window_screenshot(driver,custname);
 	}
 	
 	
